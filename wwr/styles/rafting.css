@@ -3,7 +3,6 @@
     --secondary-color: #f2a541;
     --accent1-color: #222222;
     --accent2-color: #ffffff;
-
     --heading-font: Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -28,8 +27,8 @@ footer {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     background-color: var(--primary-color);
     padding: 1rem;
@@ -38,6 +37,12 @@ header {
 header img {
     width: 120px;
     height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav a {
@@ -91,8 +96,8 @@ article {
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    right: 20px;
+    left: 40px;
+    right: 40px;
     background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -103,13 +108,58 @@ article {
     border: 2px solid var(--secondary-color);
 }
 
-section {
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 16px;
+    align-items: center;
     border: 1px solid var(--secondary-color);
 }
 
-footer {
+.history h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures {
+    border: 1px solid var(--secondary-color);
+}
+
+.adventures h2 {
+    text-align: center;
+}
+
+.adventure-gallery {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+}
+
+.adventure-gallery figure {
+    width: 20%;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    margin-top: 6px;
+    color: var(--accent1-color);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
@@ -117,12 +167,21 @@ footer {
     padding: 1rem;
 }
 
+footer p {
+    color: var(--accent2-color);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .socialmedia a {
     text-decoration: none;
+    margin-left: 10px;
 }
 
 .socialmedia img {
     width: 32px;
     height: 32px;
-    margin-left: 10px;
 }
