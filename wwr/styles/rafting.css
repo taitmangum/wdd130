@@ -5,7 +5,7 @@
     --accent2-color: #ffffff;
 
     --heading-font: Georgia, serif;
-    --body-font: Arial, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -17,6 +17,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: var(--accent2-color);
 }
 
 header,
@@ -36,13 +37,20 @@ header {
 
 header img {
     width: 120px;
+    height: auto;
 }
 
 nav a {
-    color: white;
+    color: var(--accent2-color);
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
+    padding: 8px;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 h1,
@@ -73,10 +81,11 @@ article {
     position: absolute;
     top: 20px;
     width: 100%;
-    text-align: center;
     padding: 16px;
-    background-color: rgba(31, 78, 95, 0.8);
-    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    opacity: 0.85;
 }
 
 .hero article {
@@ -91,6 +100,11 @@ article {
     float: right;
     width: 125px;
     margin-left: 15px;
+    border: 2px solid var(--secondary-color);
+}
+
+section {
+    border: 1px solid var(--secondary-color);
 }
 
 footer {
@@ -98,8 +112,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent2-color);
     margin-top: 20px;
+    padding: 1rem;
 }
 
 .socialmedia a {
@@ -108,5 +123,6 @@ footer {
 
 .socialmedia img {
     width: 32px;
+    height: 32px;
     margin-left: 10px;
 }
