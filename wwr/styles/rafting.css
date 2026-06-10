@@ -185,3 +185,112 @@ footer p {
     width: 32px;
     height: 32px;
 }
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    border: 1px solid var(--secondary-color);
+}
+
+.contact-grid h2 {
+    text-align: center;
+}
+
+.company-info {
+    background-color: var(--accent2-color);
+}
+
+.company-info iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-top: 12px;
+}
+
+.contact-form {
+    background-color: var(--accent2-color);
+    padding: 16px;
+}
+
+fieldset {
+    border: 1px solid var(--secondary-color);
+    padding: 16px;
+}
+
+legend {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.employees {
+    border: 1px solid var(--secondary-color);
+}
+
+.employees h2 {
+    text-align: center;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.employee-profiles figure {
+    text-align: center;
+    width: 30%;
+}
+
+.employee-profiles img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.employee-profiles figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
